@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./login.css">
+    <script src="./login.js" defer></script>
+</head>
+<body>
+    <div class="modal">
+        <h2>버거킹 회원가입을 축하합니다!</h2>
+    </div>
+    <!-- header -->
+    <div class="hdWrap">
+        <header class="hd">
+            <h1 class="logo" onclick="location.href='./index.html'"><img src="./img/logo.png" alt="로고"></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">메뉴소개</a>
+                        <ul class="sub">
+                            <li><a href="#">스페셜&할인팩</a></li>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">와퍼</a></li>
+                            <li><a href="#">주니어&버거</a></li>
+                            <li><a href="#">올데이킹&치킨버거</a></li>
+                            <li><a href="#">사이드</a></li>
+                            <li><a href="#">음료&디저트</a></li>
+                            <li><a href="#">독퍼</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장찾기</a>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="#">브랜드스토리</a>
+                        <ul class="sub">
+                            <li><a href="#">BRNAD</a></li>
+                            <li><a href="#">WHOPPER</a></li>
+                            <li><a href="#">COMM.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">버거킹앱이용안내</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">문의</a></li>
+                        <li><a href="#">가맹점모집</a></li>
+                        <li><a href="#">인재채용</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="delivery">딜리버리 주문</a>
+    
+        </header>
+    </div>
+    <!-- header -->
+    <!-- section1 -->
+    <section class="sec1">
+        <h2 class="inner">HOME > 로그인</h2>
+    </section>
+    <!-- section1 -->
+    <!-- section2 -->
+    <section class="sec2 inner">
+        <h2>
+            <span>YOUR WAY</span>
+            <p>어서오세요! 버거킹입니다.</p>
+        </h2>
+        <div class="loginCon">
+            <div class="generalLogin">
+                <h3>일반 로그인</h3>
+                <input type="text" placeholder="아이디(이메일)" name="uid" id="uid">
+                <p class="uid">최소6자를 입력하세요</p>
+                <input type="password" placeholder="비밀번호" name="pwd" id="pwd">
+                <p class="pwd">영문, 숫자, 특수문자를 모두 사용하세요</p>
+                <p class="pwd">최소8자 ~ 최대 20자를 입력하세요</p>
+                <div class="checkbox">
+                    <label for="check1"><input type="checkbox" id="check1"><span>아이디 저장</span></label>
+                    <label for="check2"><input type="checkbox" id="check2"><span>자동 로그인</span></label>
+                </div>
+                <div class="btn">
+                    <button>로그인</button>
+                    <button onclick="joinform_check()">회원가입</button>
+                </div>
+                <a href="#">아이디 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+            </div>
+            <div class="snsLogin">
+                <h3>간편 로그인</h3>
+                <ul>
+                    <li><img src="" alt=""><a href="#">네이버 로그인</a></li>
+                    <li><img src="" alt=""><a href="#">카카오톡 로그인</a></li>
+                    <li><img src="" alt=""><a href="#">애플 로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- section2 -->
+    <!-- section3 -->
+    <section class="sec3">
+        <div class="inner">
+            <h2>
+                <span class="on">비회원 주문</span>
+                <span>비회원 주문내역</span>
+            </h2>
+            <ul>
+                <li class="on">
+                    <p>회원가입 없이 비회원으로 주문이 가능합니다.</p>
+                    <a href="#">비회원 주문</a>
+                </li>
+                <li>
+                    <span>주문번호</span><input type="text" placeholder="주문번호 입력" name="order" id="order">
+                    <span>비밀번호</span><input type="text" placeholder="비밀번호" name="orderpwd" id="orderpwd">
+                    <button onclick="order_check()">조회하기</button>
+                </li>
+            </ul>
+        </div>
+        <div class="modal2">
+            <p>주문완료</p>
+        </div>
+    </section>
+    <!-- section3 -->
+    <!-- footer -->
+    <footer class="ft">
+        <div class="inner">
+            <h2><img src="./img/logo2.png" alt="푸터로고"></h2>
+            <div>
+                <div>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보취급방침</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="contact">
+                    <a href="#">인재채용</a>
+                    <a href="#">가맹점모집</a>
+                </div>
+            </div>
+            <p><span>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</span><span>전화주문 1599-0505</span></p>
+            <p><span>사업자 등록번호 101-86-76277</span><span>(주)BKR 대표이사 문영주</span></p>
+            <p>Copyright 2022 BKR Co., Ltd. All right Reserved</p>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+</html>

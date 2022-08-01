@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버거킹</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./common.css">
+    <script src="./common.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="hd">
+            <h1 class="logo" onclick="location.href='./index.html'"><img src="./img/logo.png" alt="로고"></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">메뉴소개</a>
+                        <ul class="sub">
+                            <li><a href="#">스페셜&할인팩</a></li>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">와퍼</a></li>
+                            <li><a href="#">주니어&버거</a></li>
+                            <li><a href="#">올데이킹&치킨버거</a></li>
+                            <li><a href="#">사이드</a></li>
+                            <li><a href="#">음료&디저트</a></li>
+                            <li><a href="#">독퍼</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장찾기</a>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="#">브랜드스토리</a>
+                        <ul class="sub">
+                            <li><a href="#">BRNAD</a></li>
+                            <li><a href="#">WHOPPER</a></li>
+                            <li><a href="#">COMM.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">버거킹앱이용안내</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">문의</a></li>
+                        <li><a href="#">가맹점모집</a></li>
+                        <li><a href="#">인재채용</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="./login.html" class="delivery">딜리버리 주문</a>
+        <div class="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!-- header -->
+    <!-- section 1 -->
+    <section class="sec1">
+        <h2><video src="./img/Big King™.mp4" autoplay loop muted></video></h2>
+    </section>
+    <!-- section 1 -->
+    <!-- section 2 -->
+    <section class="sec2">
+        <h2 class="h2">BEST MENU</h2>
+        <div class="slideCon">
+            <ul class="slide">
+                <li id="_1">
+                    <img src="./img/sec2_gines.png" alt="기네스"><p class="bgName">기네스콰트로치즈와퍼</p>
+                </li>
+                <li id="_2" class="on">
+                    <img src="./img/sec2_texas.png" alt="텍사스">
+                    <p class="bgName">텍사스 칠리와퍼
+                        <!-- <strong>TEXAS CHILI WHOPPER</strong>
+                        <p>8,500 &#8361;</p> -->
+                    </p>
+                </li>
+                <li id="_3">
+                    <img src="./img/sec2_shrimp.png" alt="새우"><p class="bgName">통새우슈림프버거</p>
+                </li>
+                <li id="_4">
+                    <img src="./img/sec2_whopper.png" alt="와퍼"><p class="bgName">와퍼</p>
+                </li>
+                <li id="_5">
+                    <img src="./img/sec2_texas.png" alt="텍사스2"><p class="bgName">텍사스 칠리와퍼2</p>
+                </li>
+                <li id="6">
+                    <img src="./img/sec2_shrimp.png" alt="쉬림프2"><p class="bgName">통새우슈림프버거2</p>
+                </li>
+            </ul>
+            <div class="textcon">
+                <div class="textbox" id="_1">
+                    <span>프리미엄</span>
+                    <h3>기네스콰트로치즈와퍼</h3>
+                    <p class="info"><span>단품 <strong>9,700 </strong>원</span></p>
+                    <p>콰트로치즈와퍼가 기네스를 만나다!</p>
+                    <a href="#">더보기</a>
+                </div>
+                <div class="textbox on" id="_2">
+                    <span>프리미엄</span>
+                    <h3>텍사스 칠리와퍼</h3>
+                    <p class="info"><span>단품 <strong>8,500 </strong>원</span></p>
+                    <p>비프칠리로 만나는 정통 와퍼</p>
+                    <a href="#">더보기</a>
+                </div>
+                <div class="textbox" id="_3">
+                    <span>주니어&버거</span>
+                    <h3>통새우슈림프버거</h3>
+                    <p class="info"><span>단품 <strong>6,400 </strong>원</span></p>
+                    <p>통통한 통새우에 새콤달콤 루피 특제소스 듬뿍! 통새우 슈림프 버거</p>
+                    <a href="#">더보기</a>
+                </div>
+                <div class="textbox" id="_4">
+                    <span>와퍼</span>
+                    <h3>와퍼</h3>
+                    <p class="info"><span>단품 <strong>7,300 </strong>원</span></p>
+                    <p>불에 직접 구운 순 쇠고기 패티에 싱싱한 야채가 한가득~ 버거킹의 대표 메뉴!</p>
+                    <a href="#">더보기</a>
+                </div>
+                <div class="textbox" id="_5">
+                    <span>프리미엄2</span>
+                    <h3>텍사스 칠리와퍼2</h3>
+                    <p class="info"><span>단품 <strong>8,500 </strong>원</span></p>
+                    <p>비프칠리로 만나는 정통 와퍼2</p>
+                    <a href="#">더보기</a>
+                </div>
+                <div class="textbox" id="_6">
+                    <span>주니어&버거</span>
+                    <h3>통새우슈림프버거2</h3>
+                    <p class="info"><span>단품 <strong>6,400 </strong>원</span></p>
+                    <p>통통한 통새우에 새콤달콤 루피 특제소스 듬뿍! 통새우 슈림프 버거</p>
+                    <a href="#">더보기</a>
+                </div>
+            </div>
+            <div class="btn">
+                <span class="prev">&lt;</span>
+                <span class="next">&gt;</span>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+    <!-- section 3 -->
+    <section class="sec3 inner">
+        <h2 class="h2">BK NEWS</h2>
+        <div class="swiper mySwiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="./img/banner1.jpg" alt="배너1"></li>
+                <li class="swiper-slide"><img src="./img/banner2.jpg" alt="배너2"></li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- section 3 -->
+    <!-- section 4 -->
+    <section class="sec4">
+        <h2 class="h2">BK APP</h2>
+        <div class="inner">
+            <div class="sec4_left">
+                <h3>
+                    <p>새로워진</p>
+                    <p><strong>버거킹 앱</strong>으로</p>
+                    <p>지금 주문하세요</p>
+                </h3>
+                <ul class="appMenu">
+                    <li class="on"><p>홈</p></li>
+                    <li><p>쿠폰</p></li>
+                    <li><p>MY킹</p></li>
+                    <li><p>멤버십</p></li>
+                </ul>
+                <div class="appStore">
+                    <ul>
+                        <li><img src="./img/sec4_googleplay.png" alt="구글"></li>
+                        <li><img src="./img/sec4_apple.png" alt="애플"></li>
+                    </ul>
+                    <div><img src="./img/sec4_QR.png" alt="QR코드"></div>
+                </div>
+            </div>
+            <div class="white"></div>
+            <ul class="appImg">
+                <li class="on"><img src="./img/sec4_home.png" alt="홈"></li>
+                <li><img src="./img/sec4_coupon.png" alt="쿠폰"></li>
+                <li><img src="./img/sec4_myking.png" alt="마이킹"></li>
+                <li><img src="./img/sec4_member.png" alt="멤버십"></li>
+            </ul>
+        </div>
+    </section>
+    <!-- section 4 -->
+    <!-- section 5 -->
+    <section class="sec5 inner">
+        <h2 class="h2">What's WHOPPER</h2>
+        <ul>
+            <li id="ing1"><img src="./img/sec5_1bun3.jpg" alt="빵"><span>참깨번</span></li>
+            <li id="ing2"><img src="./img/sec5_2meet3.jpg" alt="고기"><span>100% 순쇠고기</span></li>
+            <li id="ing3"><img src="./img/sec5_3pickles3.jpg" alt="피클"><span>피클</span></li>
+            <li id="ing4"><img src="./img/sec5_4cabbage3.jpg" alt="양배추"><span>양상추</span></li>
+            <li id="ing5"><img src="./img/sec5_5RealWhopper3.jpg" alt="와퍼"><span></span></li>
+            <li id="ing6"><img src="./img/sec5_6mayonnaise3.jpg" alt="마요네즈"><span>마요네즈</span></li>
+            <li id="ing7"><img src="./img/sec5_7onion3.jpg" alt="양파"><span>양파</span></li>
+            <li id="ing8"><img src="./img/sec5_8tomago3.jpg" alt="토마토"><span>토마토</span></li>
+            <li id="ing9"><img src="./img/sec5_9ketchup3.jpg" alt="케첩"><span>케첩</span></li>
+        </ul>
+    </section>
+    <!-- section 5 -->
+    <!-- section 6 -->
+    <section class="sec6 inner">
+        <h2 class="h2">BK SNS</h2>
+        <ul>
+            <li><img src="./img/search.png" alt="매장찾기"><h3>매장찾기</h3><p>찾기 간편해요!</p></li>
+            <li><img src="./img/youtube.png" alt="유튜브"><h3>Youtube</h3><p>구독 4.9만</p></li>
+            <li><img src="./img/facebook.png" alt="페이스북"><h3>Facebook</h3><p>좋아요 47.8만</p></li>
+            <li><img src="./img/instagram.png" alt="인스타그램"><h3>Instagram</h3><p>팔로워 74.9K</p></li>
+        </ul>
+    </section>
+    <!-- section 6 -->
+    <!-- footer -->
+    <footer class="ft">
+        <div class="inner">
+            <h2><img src="./img/logo2.png" alt="푸터로고"></h2>
+            <div>
+                <div>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보취급방침</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="contact">
+                    <a href="#">인재채용</a>
+                    <a href="#">가맹점모집</a>
+                </div>
+            </div>
+            <p><span>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</span><span>전화주문 1599-0505</span></p>
+            <p><span>사업자 등록번호 101-86-76277</span><span>(주)BKR 대표이사 문영주</span></p>
+            <p>Copyright 2022 BKR Co., Ltd. All right Reserved</p>
+        </div>
+    </footer>
+    <!-- footer -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: true,
+            Infinity,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+    </script>
+</div>
+</body>
+</html>
